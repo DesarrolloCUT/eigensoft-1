@@ -435,7 +435,7 @@ int readsnpdata(SNPDATA **snpraw, char *fname)   {
 
 /* ---------------------------------------------------------------------------------------------------- */
 int readsnpmapdata(SNPDATA **snpraw, char *fname)   {
-  char line[MAXSTR] ;
+  char line[LONGSTR] ;
   char *spt[MAXFF], *sx ;
   int nsplit, num=0, k, t ;
   int skipit, len ;
@@ -448,7 +448,7 @@ int readsnpmapdata(SNPDATA **snpraw, char *fname)   {
 
   vclear(maxgpos, -9999.0, MAXCH) ; 
   openit(fname, &fff, "r") ;
-  while (fgets(line, MAXSTR, fff) != NULL)  {
+  while (fgets(line, LONGSTR, fff) != NULL)  {
     nsplit = splitup(line, spt, MAXFF) ; 
     if (nsplit == 0) continue ;
     sx = spt[0] ;

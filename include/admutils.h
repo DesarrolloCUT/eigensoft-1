@@ -1,7 +1,7 @@
 #include <ctype.h>
 #include <nicklib.h>
 #include <xsearch.h> 
-#define IDSIZE 40
+#define IDSIZE 16000 /* maximum ID length that current PLINK 1.9 can handle */
 
 #ifndef ADMUTILS
 
