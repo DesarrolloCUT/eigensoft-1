@@ -1,2 +1,14 @@
 *.o
 *.a
+
+src/baseprog
+src/convertf
+src/eigensrc/eigenstrat
+src/eigensrc/eigenstratQTL
+src/eigensrc/pcatoy
+src/eigensrc/smarteigenstrat
+src/eigensrc/smartpca
+src/eigensrc/smartrel
+src/eigensrc/twstats
+src/mergeit
+src/pca
